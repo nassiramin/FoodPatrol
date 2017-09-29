@@ -12,7 +12,7 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 import com.example.anas.foodpatrol.R;
 import com.example.anas.foodpatrol.app.AppController;
-import com.example.anas.foodpatrol.module.Jarak;
+import com.example.anas.foodpatrol.model.Jarak;
 
 import java.util.List;
 

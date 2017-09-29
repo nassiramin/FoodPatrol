@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.anas.foodpatrol.R;
+import com.example.anas.foodpatrol.module.login.LoginActivity;
 
 /**
  * Created by Anas on 07/07/2017.
@@ -41,7 +42,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent intent = new Intent(HomeActivity.this, Login.class);
+                Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
                 finish();
                 startActivity(intent);
             }

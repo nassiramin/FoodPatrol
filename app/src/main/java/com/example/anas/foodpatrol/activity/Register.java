@@ -18,6 +18,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.example.anas.foodpatrol.R;
 import com.example.anas.foodpatrol.app.AppController;
+import com.example.anas.foodpatrol.module.login.LoginActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -76,7 +77,7 @@ public class Register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                intent = new Intent(Register.this, Login.class);
+                intent = new Intent(Register.this, LoginActivity.class);
                 finish();
                 startActivity(intent);
             }

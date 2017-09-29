@@ -26,7 +26,7 @@ import com.example.anas.foodpatrol.R;
 import com.example.anas.foodpatrol.activity.MainActivity;
 import com.example.anas.foodpatrol.adapter.CustomListAdapter;
 import com.example.anas.foodpatrol.app.AppController;
-import com.example.anas.foodpatrol.module.Jarak;
+import com.example.anas.foodpatrol.model.Jarak;
 
 import org.json.JSONArray;
 import org.json.JSONException;

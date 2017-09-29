@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.anas.foodpatrol.R;
+import com.example.anas.foodpatrol.module.login.LoginActivity;
 
 public class HomeLogin extends AppCompatActivity {
     Button login_but;
@@ -29,7 +30,7 @@ public class HomeLogin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent intent = new Intent(HomeLogin.this, Login.class);
+                Intent intent = new Intent(HomeLogin.this, LoginActivity.class);
                 finish();
                 startActivity(intent);
             }

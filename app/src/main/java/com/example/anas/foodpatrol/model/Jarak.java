@@ -1,4 +1,4 @@
-package com.example.anas.foodpatrol.module;
+package com.example.anas.foodpatrol.model;
 
 /**
  * Created by Anas on 20/06/2017.

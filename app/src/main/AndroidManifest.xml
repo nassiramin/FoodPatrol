@@ -33,7 +33,7 @@
         <activity
             android:name=".activity.HomeLogin"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.Login"
+        <activity android:name=".module.login.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".activity.HomeActivity"/>
         <activity android:name=".activity.Register"
