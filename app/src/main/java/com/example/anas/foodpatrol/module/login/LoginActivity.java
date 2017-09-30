@@ -10,7 +10,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.anas.foodpatrol.R;
-import com.example.anas.foodpatrol.activity.HomeActivity;
 import com.example.anas.foodpatrol.activity.HomesActivity;
 import com.example.anas.foodpatrol.activity.Register;
 

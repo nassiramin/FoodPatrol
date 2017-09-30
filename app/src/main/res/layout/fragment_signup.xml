@@ -15,16 +15,18 @@
         android:layout_marginTop="20dp"
         >
 
+
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
 
             <customfonts.MyEditText
-                android:id="@+id/txt_username"
+                android:id="@+id/txt_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Username"
+                android:hint="Nama"
                 android:textSize="15dp"
                 android:maxLength="20"
                 android:background="#00000000"/>
@@ -37,6 +39,30 @@
         </android.support.design.widget.TextInputLayout>
 
 
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+
+            <customfonts.MyEditText
+                android:id="@+id/txt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:textSize="15dp"
+                android:inputType="textPassword"
+                android:background="#00000000"
+                android:maxLength="8"/>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc"/>
+
+        </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -86,6 +112,8 @@
                 android:background="#ccc"/>
 
         </android.support.design.widget.TextInputLayout>
+
+
 
         <Button
             android:id="@+id/btn_register"

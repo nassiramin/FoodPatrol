@@ -10,13 +10,13 @@
 
     <!--<ImageView-->
 
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:scaleType="fitXY"-->
-        <!--android:src="@drawable/background_header"-->
-        <!--android:layout_alignParentLeft="true"-->
-        <!--android:layout_alignParentStart="true"-->
-        <!--android:layout_alignParentTop="true" />-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@drawable/background_header"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_alignParentTop="true" />-->
 
 
     <ImageView
@@ -25,24 +25,24 @@
         android:scaleType="fitXY"
         android:src="@drawable/background_header" />
 
-        <customfonts.MyTextView
-            android:id="@+id/txt_id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="120dp"
-            android:layout_marginLeft="10dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@color/colorPrimary"
-            />
+    <customfonts.MyTextView
+        android:id="@+id/txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/colorPrimary"
+        />
 
-        <customfonts.MyTextView
-            android:id="@+id/txt_username"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_id"
-            android:layout_marginLeft="10dp"
-            android:textColor="@color/colorPrimary"
-            />
+    <customfonts.MyTextView
+        android:id="@+id/txt_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_id"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorPrimary"
+        />
 
 
 

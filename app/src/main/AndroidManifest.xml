@@ -38,7 +38,8 @@
         <activity android:name=".activity.HomeActivity"/>
         <activity android:name=".activity.Register"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".activity.HomesActivity"/>
+        <activity android:name=".activity.HomesActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>/>
 
     </application>
 

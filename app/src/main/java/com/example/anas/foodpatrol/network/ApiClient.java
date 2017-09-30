@@ -4,7 +4,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * Created by Anas on 28/09/2017.
+ * Created by AnasBayu on 15/08/2017.
  */
 
 public class ApiClient {
@@ -22,4 +22,3 @@ public class ApiClient {
         return buatClient().create(ApiInterface.class);
     }
 }
-

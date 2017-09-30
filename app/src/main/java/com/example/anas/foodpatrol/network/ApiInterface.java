@@ -8,13 +8,13 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
 /**
- * Created by Anas on 28/09/2017.
+ * Created by AnasBayu on 15/08/2017.
  */
 
 public interface ApiInterface {
     @FormUrlEncoded
     @POST(ApiConfig.LOGIN)
-    Call<ResponseModel> login(@Field("username") String username, @Field("password") String pass);
+    Call<ResponseModel> login(@Field("username") String username, @Field("password") String password);
 
     @FormUrlEncoded
     @POST(ApiConfig.REGISTER)
