@@ -1,4 +1,4 @@
-package com.example.anas.foodpatrol.activity;
+package com.example.anas.foodpatrol.module.Home;
 
 
 import android.content.Intent;
@@ -20,23 +20,26 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.anas.foodpatrol.R;
-import com.example.anas.foodpatrol.fragment.HomeFragment;
-import com.example.anas.foodpatrol.fragment.NearbyFragment;
-import com.example.anas.foodpatrol.fragment.NotificationsFragment;
-import com.example.anas.foodpatrol.fragment.SearchFragment;
-import com.example.anas.foodpatrol.fragment.SettingsFragment;
+import com.example.anas.foodpatrol.activity.AboutUsActivity;
+import com.example.anas.foodpatrol.activity.PrivacyPolicyActivity;
+import com.example.anas.foodpatrol.module.Home.fragment.HomeFragment;
+import com.example.anas.foodpatrol.module.Home.fragment.NearbyFragment;
+import com.example.anas.foodpatrol.module.Home.fragment.NotificationsFragment;
+import com.example.anas.foodpatrol.module.Home.fragment.SearchFragment;
+import com.example.anas.foodpatrol.module.Home.fragment.SettingsFragment;
 
 
 /**
  * Created by Anas on 14/08/2017.
  */
 
-public class HomesActivity extends AppCompatActivity {
+public class HomesActivity extends AppCompatActivity implements HomeView {
     private NavigationView navigationView;
     private DrawerLayout drawer;
     private View navHeader;
     private TextView txt_id, txt_username;
-    private String id, username;
+    private String username;
+    private String id;
 
     private Toolbar toolbar;
     private FloatingActionButton fab;
@@ -62,6 +65,7 @@ public class HomesActivity extends AppCompatActivity {
     // flag to load home fragment when user presses back key
     private boolean shouldLoadHomeFragOnBackPress = true;
     private Handler mHandler;
+    private HomePresenter mPresenter;
 
 
     @Override
@@ -70,6 +74,7 @@ public class HomesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_homes);
 
         initView();
+        initPresenter();
 
         // load nav menu header data
         loadNavHeader();
@@ -82,6 +87,10 @@ public class HomesActivity extends AppCompatActivity {
             CURRENT_TAG = TAG_HOME;
             loadHomeFragment();
         }
+    }
+
+    private void initPresenter() {
+        mPresenter = new HomePresenter(this);
     }
 
 
@@ -173,7 +182,7 @@ public class HomesActivity extends AppCompatActivity {
         drawer.closeDrawers();
 
         // refresh toolbar menu
-//        invalidateOptionsMenu();
+        invalidateOptionsMenu();
     }
 
     private Fragment getHomeFragment() {
@@ -204,9 +213,9 @@ public class HomesActivity extends AppCompatActivity {
         }
     }
 
-//    private void setToolbarTitle() {
-//        getSupportActionBar().setTitle(activityTitles[navItemIndex]);
-//    }
+    private void setToolbarTitle() {
+        getSupportActionBar().setTitle(activityTitles[navItemIndex]);
+    }
 
     private void selectNavMenu() {
         navigationView.getMenu().getItem(navItemIndex).setChecked(true);
@@ -361,6 +370,26 @@ public class HomesActivity extends AppCompatActivity {
             fab.show();
         else
             fab.hide();
+    }
+
+    @Override
+    public void onProgress() {
+
+    }
+
+    @Override
+    public void onFinished() {
+
+    }
+
+    @Override
+    public void onError(String msg) {
+
+    }
+
+    @Override
+    public void onSuccess() {
+
     }
 }
 

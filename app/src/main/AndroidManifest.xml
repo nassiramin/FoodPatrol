@@ -36,9 +36,9 @@
         <activity android:name=".module.login.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".activity.HomeActivity"/>
-        <activity android:name=".activity.Register"
+        <activity android:name=".module.register.RegisterActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".activity.HomesActivity"
+        <activity android:name=".module.Home.HomesActivity"
             android:theme="@style/AppTheme.NoActionBar"/>/>
 
     </application>

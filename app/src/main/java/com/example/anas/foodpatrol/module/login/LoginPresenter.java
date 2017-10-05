@@ -8,6 +8,7 @@ import com.example.anas.foodpatrol.model.DataStorage;
 import com.example.anas.foodpatrol.model.ResponseModel;
 import com.example.anas.foodpatrol.network.ApiClient;
 import com.example.anas.foodpatrol.network.ApiInterface;
+import com.google.gson.Gson;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -38,8 +39,12 @@ public class LoginPresenter {
                         Log.d("LOG_RESPONSE_BODY", response.body().toString());
                         Log.d("LOG_RESPONSE_PESAN", response.body().getPesan().toString());
 
-                        DataStorage.setUsername("username");
-                        mView.onSuccess();
+                        if (response.body().getStatus() == true){
+                            DataStorage.setUsername("username");
+                            mView.onSuccess();
+                        }else{
+                            mView.onError(response.body().getPesan());
+                        }
                     }
 
                     @Override

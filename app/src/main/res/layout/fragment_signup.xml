@@ -52,7 +52,6 @@
                 android:layout_height="wrap_content"
                 android:hint="Username"
                 android:textSize="15dp"
-                android:inputType="textPassword"
                 android:background="#00000000"
                 android:maxLength="8"/>
 

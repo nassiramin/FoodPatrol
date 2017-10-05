@@ -1,4 +1,4 @@
-package com.example.anas.foodpatrol.fragment;
+package com.example.anas.foodpatrol.module.Home.fragment;
 
 import android.Manifest;
 import android.content.Context;

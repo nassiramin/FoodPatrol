@@ -46,6 +46,7 @@ public class RegisterActivity extends AppCompatActivity implements RegisterView 
     private void initView(){
         btn_login = (Button) findViewById(R.id.btn_login);
         btn_register = (Button) findViewById(R.id.btn_register);
+        txt_name = (EditText) findViewById(R.id.txt_name);
         txt_username = (EditText) findViewById(R.id.txt_username);
         txt_password = (EditText) findViewById(R.id.txt_password);
         txt_confirm_password = (EditText) findViewById(R.id.txt_confirm_password);
@@ -98,6 +99,12 @@ public class RegisterActivity extends AppCompatActivity implements RegisterView 
     public void onError(String msg) {
         onFinished();
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onSuccess() {
+        onFinished();
+
     }
 
 

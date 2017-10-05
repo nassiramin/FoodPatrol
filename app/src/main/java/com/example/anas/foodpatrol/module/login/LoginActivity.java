@@ -10,8 +10,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.anas.foodpatrol.R;
-import com.example.anas.foodpatrol.activity.HomesActivity;
-import com.example.anas.foodpatrol.activity.Register;
+import com.example.anas.foodpatrol.module.Home.HomesActivity;
+import com.example.anas.foodpatrol.module.register.RegisterActivity;
 
 /**
  * Created by Anas on 07/07/2017.
@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
 
             @Override
             public void onClick(View v) {
-                Intent iRegister = new Intent(LoginActivity.this, Register.class);
+                Intent iRegister = new Intent(LoginActivity.this, RegisterActivity.class);
                 finish();
                 startActivity(iRegister);
             }
